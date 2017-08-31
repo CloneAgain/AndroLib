@@ -110,7 +110,7 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = "maven"
+        repo = "santosh"
         // it is the name that appears in bintray when logged
         name = "com.santosh.androidlib" // TODO
         websiteUrl = siteUrl
