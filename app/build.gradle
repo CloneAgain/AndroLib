@@ -112,7 +112,7 @@ bintray {
     pkg {
         repo = "maven"
         // it is the name that appears in bintray when logged
-        name = "com.santosh:androidlib" // TODO
+        name = "com.santosh.androidlib" // TODO
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
