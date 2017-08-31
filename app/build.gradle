@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: "com.jfrog.bintray"
+version = "1.0.0"
 
 android {
     compileSdkVersion 25
@@ -33,7 +34,7 @@ dependencies {
 
 def siteUrl = 'https://github.com/CloneAgain/AndroLib'      // Homepage URL of the library
 def gitUrl = 'https://github.com/CloneAgain/AndroLib.git'   // Git repository URL
-group = "com.santosh.androidlib"
+group = "com.santosh"
 
 
 
@@ -109,12 +110,13 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = "santosh"
+        repo = "maven"
         // it is the name that appears in bintray when logged
-        name = "com.santosh.androidlib" // TODO
+        name = "com.santosh:androidlib" // TODO
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
+
         publish = true
         version {
             gpg {
