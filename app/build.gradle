@@ -33,7 +33,7 @@ dependencies {
 
 def siteUrl = 'https://github.com/CloneAgain/AndroLib'      // Homepage URL of the library
 def gitUrl = 'https://github.com/CloneAgain/AndroLib.git'   // Git repository URL
-group = "com.hl"
+group = "com.santosh.androidlib"
 
 
 
@@ -48,7 +48,7 @@ install {
                 packaging 'aar'
 
                 // Add your description here
-                name = 'androidlib'// TODO
+                name = 'com.santosh:androidlib'// TODO
                 description = 'Description of your project HERE' // TODO
                 url siteUrl
 
@@ -61,7 +61,7 @@ install {
                 }
                 developers {
                     developer {
-                        id 'androlib' // TODO
+                        id 'androidlib' // TODO
                         name 'santosh' // TODO
                         email 'san.niit.yadav@gmail.com' // TODO
                     }
@@ -109,9 +109,9 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = "maven"
+        repo = "santosh"
         // it is the name that appears in bintray when logged
-        name = "santosh-headerlabs-28" // TODO
+        name = "com.santosh.androidlib" // TODO
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
