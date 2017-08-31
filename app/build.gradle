@@ -33,7 +33,12 @@ dependencies {
 
 def siteUrl = 'https://github.com/CloneAgain/AndroLib'      // Homepage URL of the library
 def gitUrl = 'https://github.com/CloneAgain/AndroLib.git'   // Git repository URL
-group = "com.santosh"                                          // Maven Group ID for the artifact
+group = "com.hl"
+
+
+
+
+// Maven Group ID for the artifact
 
 install {
     repositories.mavenInstaller {
@@ -43,7 +48,7 @@ install {
                 packaging 'aar'
 
                 // Add your description here
-                name = 'com.santosh:androidlib'// TODO
+                name = 'androidlib'// TODO
                 description = 'Description of your project HERE' // TODO
                 url siteUrl
 
@@ -56,7 +61,7 @@ install {
                 }
                 developers {
                     developer {
-                        id 'androLiib' // TODO
+                        id 'androlib' // TODO
                         name 'santosh' // TODO
                         email 'san.niit.yadav@gmail.com' // TODO
                     }
@@ -106,7 +111,7 @@ bintray {
     pkg {
         repo = "maven"
         // it is the name that appears in bintray when logged
-        name = "com.santosh:androidlib" // TODO
+        name = "santosh-headerlabs-28" // TODO
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
